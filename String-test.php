@@ -1,12 +1,21 @@
+
 <?php
 declare(strict_types=1);
 
-// Variabel nama
-$nama = "KursusKu";
+// Teks awal yang memiliki spasi di awal dan akhir
+$teks = " Laravel Fundamental ";
 
-// Menggabungkan string dengan variabel menggunakan operator titik (.)
-$pesan = "Selamat datang di " . $nama;
+// Menghapus spasi di awal dan akhir teks
+$hasil = trim($teks);
 
-// Menampilkan hasil ke browser
-echo $pesan;
+// Menampilkan hasil pengujian
+echo "<h2>Pengujian Fungsi trim() PHP</h2>";
+
+echo "<p>Teks sebelum trim(): ["
+    . htmlspecialchars($teks)
+    . "]</p>";
+
+echo "<p>Teks setelah trim(): ["
+    . htmlspecialchars($hasil)
+    . "]</p>";
 ?>
